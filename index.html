@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="estilos.css">
+     <img src="fono.jpg" alt="">
+</head>
+<body>
+    <div class="container">
+        <h1>contacta con nosotros:</h1>
+        <form id="Formulario ">
+            <div class="Opciones">
+                <label for="first-name">Nombres </label>
+                <input type="text" id="first-name" name="first-name" required>
+                <label for="last-name">Apellidos </label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Direccion de correo electronico *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Tipo de consulta </label>
+                <div class="radio-group">
+                    <input type="radio" id="general-enquiry" name="query-type" value="General Enquiry" required>
+                    <label for="general-enquiry">Consulta general</label>
+                    <input type="radio" id="support-request" name="query-type" value="Support Request">
+                    <label for="support-request">Solicitud De Reporte</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Escribir El Mensaje</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="consent" name="consent">
+                <label for="consent">Doy mi consentimiento para ser contactado por el equipo </label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
